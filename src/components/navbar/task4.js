@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Form, Input, Button, Card, Col, Row } from "antd";
 import './task4.css';
+import TaskNav from './taskNv'
 
 export default function Task4() {
   const [val, setVal] = useState("");
@@ -29,6 +30,7 @@ export default function Task4() {
           "linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
       }}
     >
+      <TaskNav/>
       <h1>task4... post api</h1>
       <div className="cardAlign">
         <Row>

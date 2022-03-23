@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Col, Card, Row } from "antd";
 import "./task3.css";
+import TaskNav from './taskNv'
 
 function Task3() {
   const [data, setData] = useState({});
@@ -19,6 +20,7 @@ function Task3() {
   };
   return (
     <div className="demo">
+      <TaskNav/>
       <div style={{ paddingTop: "40px", paddingBottom: "40px" }}>
         <Col
           xl={{ span: 8, offset: 8 }}

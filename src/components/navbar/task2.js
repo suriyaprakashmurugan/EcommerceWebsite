@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Table} from "antd";
+import TaskNav from './taskNv'
 
 export default function Task2() {
   const [user,setUser] = useState([]);
@@ -41,6 +42,7 @@ export default function Task2() {
 ]
   return (
     <div>
+      <TaskNav/>
       <h1>Task2</h1>
       <Table columns={columns} dataSource={user}/>
 

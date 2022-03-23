@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Col} from 'antd';
 import './login.css';
@@ -44,21 +44,27 @@ function user (x){
 }
 
 if(i===1)
-{
-    alert('login sucessfully ' + userName)
-    navigate('/task');
+{ 
+    if(userName)
+    console.log(userName)
+    alert(`login sucessfully ${userName}`)
+    navigate('/task1');
 }
 else{
     alert('User name or Passwart incorrect')
 }
 }
 
+// useEffect(()=>{
+//     user();
+// },[])
+
 
   return (
     <div className ='logIn'>
         <Col>
         <div className='card'>
-            <form onSubmit={handleSubmit} autoComplete='false'>
+            <form onSubmit={handleSubmit} autoComplete='false'> 
                 <label >Name<br/>
                     <input className='inputDesign' type='text' onChange={nameChange} placeholder='Enter your name or Number' required/><br/>
                     {/* <p>{err}</p> */}

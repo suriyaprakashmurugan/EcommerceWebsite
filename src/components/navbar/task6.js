@@ -1,7 +1,11 @@
 import React from 'react';
+import TaskNav from './taskNv'
 
 export default function Task6() {
   return (
-    <div>task6</div>
+    <div>
+      <TaskNav/>
+      task6
+      </div>
   )
 }

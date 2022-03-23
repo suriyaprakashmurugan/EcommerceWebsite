@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Table, Layout } from "antd";
+import TaskNav from './taskNv'
 
 export default function Task1() {
   const { Content } = Layout;
@@ -41,6 +42,7 @@ export default function Task1() {
   return (
     <div>
       <Content>
+        <TaskNav/>
         <h1 style={{ color: "" }}>Task1</h1>
         <Table columns={columns} dataSource={user} />
       </Content>
