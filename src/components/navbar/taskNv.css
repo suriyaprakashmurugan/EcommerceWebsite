@@ -1,0 +1,15 @@
+.navHeader{
+    background-image: linear-gradient(to right, #445590, #4266a6, #3d77bb, #3089d0, #109be5);
+    list-style: none;
+    text-decoration: none;
+    color:#1c3636;
+    box-shadow: 2px 2px 16px rgb(124, 122, 120);
+}
+.navLink{
+    color:black;
+    padding: 0px 20px;
+}
+.navLink:active{
+    color: rgb(248, 245, 245);
+    border-bottom: 2px solid rgb(242, 244, 247);
+}

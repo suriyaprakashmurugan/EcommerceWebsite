@@ -1,0 +1,21 @@
+.head
+{
+    height: 54px;
+    background-color: white;
+    box-shadow: 2px 2px 16px rgb(236, 236, 236);
+}
+.menu{
+    height: 54px;
+    font-size: 12px;
+}
+.menu-item{
+    margin-left: 0%;
+
+}
+.nav-icon{
+    position: absolute;
+}
+.V-line{
+    border-left: 1px solid rgb(224, 220, 220);
+    height: 54px;
+}

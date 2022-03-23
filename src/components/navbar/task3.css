@@ -1,0 +1,42 @@
+
+.demo
+{
+    background-image: linear-gradient(to bottom, #775daa, #a65ea8, #cd619d, #eb6a8e, #ff7b7b);
+}
+
+.inputDesign{
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid rgb(95, 95, 95);
+}
+
+.inputDesign:focus-visible{
+    border:1px solid #0075ff;
+    outline: none;
+}
+
+.checkBox{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttonAlign{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3px;
+}
+.butDesign{
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: #0075ff;
+    border-radius: 6px;
+    border: 0px;
+    color: whitesmoke;
+}
+
+.butDesign:hover{
+    box-shadow: 3px 3px 15px rgb(95, 95, 95);
+    background-color:#0075ff;
+}
