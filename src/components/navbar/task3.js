@@ -37,6 +37,7 @@ function Task3() {
             >
               <label>
                 name
+                </label>
                 <br />
                 <input
                   className = "inputDesign"
@@ -51,7 +52,7 @@ function Task3() {
                   })}
                 />
                 <br />
-              </label>
+              
               {errors.name && (
                 <p style={{ color: "red" }}>Please check the name</p>
               )}

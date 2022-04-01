@@ -8,18 +8,21 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.19.3",
     "axios": "^0.26.1",
+    "json-server": "^0.17.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.28.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "responsive-react-js-navbar": "^1.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server":"json-server --watch db.json --port 5000"
   },
   "eslintConfig": {
     "extends": [
