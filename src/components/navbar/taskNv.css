@@ -1,15 +1,100 @@
-.navHeader{
-    background-image: linear-gradient(to right, #445590, #4266a6, #3d77bb, #3089d0, #109be5);
+
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: serif;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(60, 62, 63);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    font-size: 35px;
+    color: rgb(110, 241, 250);
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+.navlist {
+    display: inline-block;
+    line-height: 80px;
+    /* margin: 18px 5px; */
     list-style: none;
+}
+.navlink{
+    color: white;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
     text-decoration: none;
-    color:#1c3636;
-    box-shadow: 2px 2px 16px rgb(124, 122, 120);
 }
-.navLink{
-    color:black;
-    padding: 0px 20px;
+.navlink.active,.navlink:hover{
+    background-color: #e6eaec;
+    transition: .5s;
 }
-.navLink:active{
-    color: rgb(248, 245, 245);
-    border-bottom: 2px solid rgb(242, 244, 247);
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width: 952px){
+    lable.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    .navlink {
+        font-size: 16px;
+    }
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+        color: #e6eaec;
+    }
+    ul{
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(72, 76, 77);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navlist{
+        display: block;
+        margin: 50px auto;
+        line-height: 30px;
+    }
+    .navlink{
+        font-size: 20px;
+    }
+    .navlink.active{
+        background-color: #e6eaec;
+        transition: .5s;
+    }
+    .navlink:hover{
+        background-color: #e6eaec;
+        transition: .5s;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+
+    }
 }

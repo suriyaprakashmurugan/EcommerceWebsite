@@ -86,7 +86,7 @@ export default function Task5()  {
                  <h1>{currentQuestion.question}</h1>
              </div>
              <ul className="qus-content">
-                    {currentQuestion.options.map((option, i)=>{return <li onClick={() => nextQuestion(i)}>{option}</li>})}              
+                    {currentQuestion.options.map((option, i)=>{return <li className="quslist" onClick={() => nextQuestion(i)}>{option}</li>})}              
              </ul>
          </div>
         )}

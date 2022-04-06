@@ -23,7 +23,7 @@
     padding: 10px;
     gap: 10px;
 }
-ul li 
+.quslist 
 {
     width: 49%;
     text-align: center;
@@ -33,7 +33,7 @@ ul li
     margin: 20px 0;
     border-radius: 10px;
 }
-ul li:hover{
+.quslist:hover{
     box-shadow: 0 0 10px rgb(170, 170, 170);
     
 }

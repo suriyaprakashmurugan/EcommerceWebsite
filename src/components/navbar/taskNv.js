@@ -1,26 +1,26 @@
 import React from "react";
-import { Layout,Col,Row} from "antd";
 import {Link} from "react-router-dom";
-import './taskNv.css'
- 
+import './taskNv.css';
+import { MenuUnfoldOutlined } from '@ant-design/icons';
+
 function TaskNav() {
-  const { Header} = Layout;
+  
 return(
-<div>
-  <Header className="navHeader">
-    <Row>
-      <Col xl={12} lg={12} md={12} sm={20} xs={20} ><h1>Suriyaprakash</h1></Col>
-      <Col xl={12} lg={12} md={12} sm={{}} xs={4} >
-     <Link to='/task1' className="navLink">task1</Link>
-     <Link to='/task2' className="navLink">task2</Link>
-     <Link to='/task3' className="navLink">task3</Link>
-     <Link to='/task4' className="navLink">task4</Link>
-     <Link to='/task5' className="navLink">task5</Link>
-     <Link to='/task6' className="navLink">task6</Link>
-     </Col>
-     </Row>
-     </Header>
- </div>
+<>
+  <nav>
+  <input type='checkbox' id='check'/>
+            <label for='check' className='checkbtn'><MenuUnfoldOutlined /></label>
+            <label className='logo'>Suriya</label>
+      <ul>
+     <li className="navlist"><Link to='/task1' className="navlink">task1</Link></li>
+     <li className="navlist"><Link to='/task2' className="navlink" >task2</Link></li>
+     <li className="navlist"><Link to='/task3' className="navlink" >task3</Link></li>
+     <li className="navlist"><Link to='/task4' className="navlink" >task4</Link></li>
+     <li className="navlist"><Link to='/task5' className="navlink" >task5</Link></li>
+     <li className="navlist"><Link to='/task6' className="navlink" >task6</Link></li>
+     </ul>
+  </nav>
+ </>
 );
 }
 
