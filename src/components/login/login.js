@@ -74,6 +74,7 @@ else{
                     {/* <p>{pwd}</p> */}
                 </label><br/> 
                 <button type='submit' className='but-Style'>login</button>
+                <h4>name:karna, password:12345</h4>
             </form>
         </div>
         </Col>
